@@ -15,8 +15,8 @@ class YouTubeType extends AbstractType
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
         $builder
-            ->add('url', UrlType::class)
             ->add('name', TextType::class)
+            ->add('url', UrlType::class)
             ->add('Submit', SubmitType::class)
         ;
     }
